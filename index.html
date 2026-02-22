@@ -4,59 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almoatasim | Elite QA Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="canvas1"></canvas>
+    <div id="bg-glow"></div>
 
     <nav>
         <div class="logo">ALMOATASIM<span>.</span></div>
         <div class="nav-links">
-            <a href="#work">Work</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact" class="hire-btn">Let's Talk</a>
+            <a href="#work">Projects</a>
+            <a href="#skills">Stack</a>
+            <a href="mailto:your-email@example.com" class="hire-btn">Get In Touch</a>
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2 class="welcome-text">Hey, I am Almoatasim _</h2>
-            <h1>I find what <span class="glitch" data-text="OTHERS MISS">OTHERS MISS</span></h1>
-            <p class="hero-sub">Crafting flawless digital experiences through advanced QA engineering & Automation.</p>
-            <div class="cta-group">
-                <a href="#work" class="main-btn">Explore Projects</a>
-                <div class="scroll-indicator"><span></span></div>
+    <header class="hero">
+        <div class="hero-inner">
+            <p class="welcome-text" id="typewriter"></p>
+            <h1 class="main-title">I find what <span class="gradient-text">OTHERS MISS</span></h1>
+            <p class="hero-desc">Expert Software Testing Engineer specializing in finding critical bugs before your users do. Bridging the gap between code and quality.</p>
+            <div class="hero-actions">
+                <a href="#work" class="primary-btn">Explore My Work</a>
+                <a href="cv.pdf" class="secondary-btn">View Resume</a>
             </div>
         </div>
-    </section>
+    </header>
 
-    <div class="marquee">
-        <div class="track">
-            <span>SELENIUM</span><span>POSTMAN</span><span>JIRA</span><span>PYTEST</span><span>SQL</span><span>JENKINS</span><span>APPIUM</span><span>GIT</span>
-            <span>SELENIUM</span><span>POSTMAN</span><span>JIRA</span><span>PYTEST</span><span>SQL</span><span>JENKINS</span><span>APPIUM</span><span>GIT</span>
+    <div class="marquee-section">
+        <div class="marquee-container">
+            <div class="track">
+                <span><i class="fab fa-python"></i> PYTHON</span>
+                <span><i class="fas fa-vial"></i> SELENIUM</span>
+                <span><i class="fas fa-satellite-dish"></i> POSTMAN</span>
+                <span><i class="fas fa-tasks"></i> JIRA</span>
+                <span><i class="fas fa-database"></i> SQL</span>
+                <span><i class="fas fa-infinity"></i> JENKINS</span>
+                <span><i class="fab fa-git-alt"></i> GIT</span>
+                <span><i class="fab fa-python"></i> PYTHON</span>
+                <span><i class="fas fa-vial"></i> SELENIUM</span>
+                <span><i class="fas fa-satellite-dish"></i> POSTMAN</span>
+                <span><i class="fas fa-tasks"></i> JIRA</span>
+            </div>
         </div>
     </div>
 
-    <section id="work" class="projects">
-        <div class="section-title">Case Studies</div>
-        <div class="grid">
-            <div class="card">
-                <div class="card-glass">
-                    <span class="num">01</span>
-                    <h3>E-Commerce Automation</h3>
-                    <p>End-to-end testing for global scale platforms.</p>
+    <section id="work" class="work-section">
+        <div class="container">
+            <h2 class="section-label">Selected Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-content">
+                        <span class="project-num">01</span>
+                        <span class="project-tag">Manual Testing</span>
+                        <h3>E-Commerce Automation</h3>
+                        <p>End-to-end testing for global scale platforms ensuring 99.9% bug-free checkout flows.</p>
+                        <div class="project-footer">
+                            <span class="tool">Selenium</span>
+                            <span class="tool">Jira</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-glass">
-                    <span class="num">02</span>
-                    <h3>Banking API Security</h3>
-                    <p>Stress testing & security validation for fintech.</p>
+                <div class="project-card">
+                    <div class="card-content">
+                        <span class="project-num">02</span>
+                        <span class="project-tag">API Testing</span>
+                        <h3>Banking API Security</h3>
+                        <p>Stress testing & security validation for fintech applications with complex data encryption.</p>
+                        <div class="project-footer">
+                            <span class="tool">Postman</span>
+                            <span class="tool">Newman</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>© 2026 Almoatasim Hasanain. Built with precision.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
