@@ -3,87 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almoatasim | Software Tester Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Almoatasim | Elite QA Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <canvas id="canvas1"></canvas>
 
     <nav>
         <div class="logo">ALMOATASIM<span>.</span></div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" class="btn-nav">Hire Me</a></li>
-        </ul>
+        <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact" class="hire-btn">Let's Talk</a>
+        </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-content" data-aos="fade-up">
-            <span class="badge">QA Engineer Specialist</span>
-            <h1>I find what <span class="highlight">others miss.</span></h1>
-            <p>I ensure your software is bulletproof through meticulous manual testing and robust automation cycles.</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn-primary">View My Work</a>
-                <a href="cv.pdf" class="btn-secondary">Download CV</a>
-            </div>
-        </div>
-        <div class="hero-img" data-aos="zoom-in">
-            <img src="profile.jpg" alt="Almoatasim">
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-        <h2 data-aos="fade-right">Technical Arsenal</h2>
-        <div class="skills-grid">
-            <div class="skill-card" data-aos="flip-left">
-                <i class="fas fa-vial"></i>
-                <h3>Manual Testing</h3>
-                <p>Regression, Smoke, Sanity & Exploratory Testing.</p>
-            </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
-                <i class="fas fa-robot"></i>
-                <h3>Automation</h3>
-                <p>Selenium WebDriver, Pytest & Behave (BDD).</p>
-            </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
-                <i class="fas fa-server"></i>
-                <h3>API Testing</h3>
-                <p>Postman, Newman & REST Assured.</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="welcome-text">Hey, I am Almoatasim _</h2>
+            <h1>I find what <span class="glitch" data-text="OTHERS MISS">OTHERS MISS</span></h1>
+            <p class="hero-sub">Crafting flawless digital experiences through advanced QA engineering & Automation.</p>
+            <div class="cta-group">
+                <a href="#work" class="main-btn">Explore Projects</a>
+                <div class="scroll-indicator"><span></span></div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
-        <h2 data-aos="fade-up">Featured Work</h2>
-        <div class="project-container">
-            <div class="project-card" data-aos="fade-up">
-                <div class="project-info">
-                    <span class="tag">E-Commerce</span>
-                    <h3>End-to-End Test Suite</h3>
-                    <p>Designed 100+ test cases covering complex payment gateways and user authentication flows.</p>
-                    <div class="tools"><span>Jira</span> <span>TestRail</span> <span>DevTools</span></div>
+    <div class="marquee">
+        <div class="track">
+            <span>SELENIUM</span><span>POSTMAN</span><span>JIRA</span><span>PYTEST</span><span>SQL</span><span>JENKINS</span><span>APPIUM</span><span>GIT</span>
+            <span>SELENIUM</span><span>POSTMAN</span><span>JIRA</span><span>PYTEST</span><span>SQL</span><span>JENKINS</span><span>APPIUM</span><span>GIT</span>
+        </div>
+    </div>
+
+    <section id="work" class="projects">
+        <div class="section-title">Case Studies</div>
+        <div class="grid">
+            <div class="card">
+                <div class="card-glass">
+                    <span class="num">01</span>
+                    <h3>E-Commerce Automation</h3>
+                    <p>End-to-end testing for global scale platforms.</p>
                 </div>
             </div>
-            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="project-info">
-                    <span class="tag">Banking</span>
-                    <h3>API Security Testing</h3>
-                    <p>Automated validation for 50+ endpoints ensuring data integrity and status code accuracy.</p>
-                    <div class="tools"><span>Postman</span> <span>JavaScript</span> <span>Newman</span></div>
+            <div class="card">
+                <div class="card-glass">
+                    <span class="num">02</span>
+                    <h3>Banking API Security</h3>
+                    <p>Stress testing & security validation for fintech.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 Almoatasim Hasanain | Built for Quality.</p>
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
