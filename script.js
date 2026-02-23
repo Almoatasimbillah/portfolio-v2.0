@@ -1,41 +1,49 @@
-// Glow effect
+// 1. Theme Toggle Logic
+const themeBtn = document.getElementById('theme-toggle');
+themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light-theme');
+    const icon = themeBtn.querySelector('i');
+    if (document.body.classList.contains('light-theme')) {
+        icon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+        icon.classList.replace('fa-sun', 'fa-moon');
+    }
+});
+
+// 2. Glow Follows Mouse
 document.addEventListener('mousemove', (e) => {
     document.getElementById('bg-glow').style.setProperty('--x', e.clientX + 'px');
     document.getElementById('bg-glow').style.setProperty('--y', e.clientY + 'px');
 });
 
-// Typewriter
-const text = "Hi, I'm Almoatasim. I find what others miss_";
+// 3. Typewriter Effect
+const text = "Eng. Almoatasim | QA Engineering Excellence_";
 let i = 0;
 function type() {
     if (i < text.length) {
         document.getElementById("typewriter").innerHTML += text.charAt(i);
         i++;
-        setTimeout(type, 50);
+        setTimeout(type, 60);
     }
 }
 window.onload = type;
 
-// Scroll progress
+// 4. Scroll Progress
 window.onscroll = () => {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let scrolled = (winScroll / height) * 100;
-    document.querySelector(".scroll-progress").style.width = scrolled + "%";
+    document.querySelector(".scroll-progress").style.width = (winScroll / height) * 100 + "%";
 };
 
-// Whatsapp Logic
+// 5. WhatsApp Integration
 function sendToWhatsapp() {
     const msg = document.getElementById('user-msg').value;
     const phone = "201060058378";
-    if (!msg.trim()) return alert("Write something first!");
+    if (!msg.trim()) return alert("Write your message first!");
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
-// Tilt init
+// 6. Init Tilt Effects
 VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
-    max: 10,
-    speed: 400,
-    glare: true,
-    "max-glare": 0.1,
+    max: 12, speed: 400, glare: true, "max-glare": 0.15
 });
