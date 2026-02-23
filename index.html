@@ -10,24 +10,34 @@
 </head>
 <body>
     <div id="bg-glow"></div>
+    <div class="custom-cursor"></div>
+    <div class="scroll-progress"></div>
 
     <nav>
         <div class="logo">ALMOATASIM<span>.</span></div>
         <div class="nav-links">
+            <a href="#about">About</a>
             <a href="#work">Projects</a>
-            <a href="#skills">Stack</a>
-            <a href="mailto:your-email@example.com" class="hire-btn">Get In Touch</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact" class="hire-btn">Hire Me Now</a>
         </div>
     </nav>
 
     <header class="hero">
         <div class="hero-inner">
-            <p class="welcome-text" id="typewriter"></p>
-            <h1 class="main-title">I find what <span class="gradient-text">OTHERS MISS</span></h1>
-            <p class="hero-desc">Expert Software Testing Engineer specializing in finding critical bugs before your users do. Bridging the gap between code and quality.</p>
-            <div class="hero-actions">
-                <a href="#work" class="primary-btn">Explore My Work</a>
-                <a href="cv.pdf" class="secondary-btn">View Resume</a>
+            <div class="hero-text">
+                <p class="welcome-text" id="typewriter"></p>
+                <h1 class="main-title">I find what <span class="gradient-text">OTHERS MISS</span></h1>
+                <p class="hero-desc">Expert Software Testing Engineer specialized in Manual & Automated cycles. I don't just find bugs; I ensure your product's reputation stays flawless.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="primary-btn">Let's Build Quality <i class="fas fa-arrow-right"></i></a>
+                    <a href="cv.pdf" class="secondary-btn">Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image-container" data-tilt>
+                <div class="image-border">
+                    <img src="profile.jpg" alt="Almoatasim" class="profile-img">
+                </div>
             </div>
         </div>
     </header>
@@ -35,46 +45,53 @@
     <div class="marquee-section">
         <div class="marquee-container">
             <div class="track">
-                <span><i class="fab fa-python"></i> PYTHON</span>
-                <span><i class="fas fa-vial"></i> SELENIUM</span>
-                <span><i class="fas fa-satellite-dish"></i> POSTMAN</span>
-                <span><i class="fas fa-tasks"></i> JIRA</span>
-                <span><i class="fas fa-database"></i> SQL</span>
-                <span><i class="fas fa-infinity"></i> JENKINS</span>
-                <span><i class="fab fa-git-alt"></i> GIT</span>
-                <span><i class="fab fa-python"></i> PYTHON</span>
-                <span><i class="fas fa-vial"></i> SELENIUM</span>
-                <span><i class="fas fa-satellite-dish"></i> POSTMAN</span>
-                <span><i class="fas fa-tasks"></i> JIRA</span>
+                <span>SELENIUM</span><span>POSTMAN</span><span>JIRA</span><span>PYTEST</span><span>SQL</span><span>JENKINS</span><span>APPIUM</span><span>GIT</span>
+                <span>SELENIUM</span><span>POSTMAN</span><span>JIRA</span><span>PYTEST</span><span>SQL</span><span>JENKINS</span><span>APPIUM</span><span>GIT</span>
             </div>
         </div>
     </div>
 
     <section id="work" class="work-section">
         <div class="container">
-            <h2 class="section-label">Selected Projects</h2>
+            <h2 class="section-label">Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-tilt>
                     <div class="card-content">
-                        <span class="project-num">01</span>
-                        <span class="project-tag">Manual Testing</span>
-                        <h3>E-Commerce Automation</h3>
-                        <p>End-to-end testing for global scale platforms ensuring 99.9% bug-free checkout flows.</p>
+                        <span class="project-tag">E-Commerce</span>
+                        <h3>Full QA Life Cycle</h3>
+                        <p>End-to-end testing for a global shop. 100+ Test cases executed.</p>
                         <div class="project-footer">
-                            <span class="tool">Selenium</span>
-                            <span class="tool">Jira</span>
+                            <span class="tool">Selenium</span><span class="tool">Jira</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-tilt>
                     <div class="card-content">
-                        <span class="project-num">02</span>
-                        <span class="project-tag">API Testing</span>
-                        <h3>Banking API Security</h3>
-                        <p>Stress testing & security validation for fintech applications with complex data encryption.</p>
+                        <span class="project-tag">Banking</span>
+                        <h3>API Security Suite</h3>
+                        <p>Automated validation for 50+ financial endpoints.</p>
                         <div class="project-footer">
-                            <span class="tool">Postman</span>
-                            <span class="tool">Newman</span>
+                            <span class="tool">Postman</span><span class="tool">Newman</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-tilt>
+                    <div class="card-content">
+                        <span class="project-tag">Mobile App</span>
+                        <h3>Cross-Platform Testing</h3>
+                        <p>Ensuring seamless UX across Android & iOS devices.</p>
+                        <div class="project-footer">
+                            <span class="tool">Appium</span><span class="tool">BrowserStack</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-tilt>
+                    <div class="card-content">
+                        <span class="project-tag">Performance</span>
+                        <h3>Load & Stress Analysis</h3>
+                        <p>Simulating 10k+ concurrent users to find breaking points.</p>
+                        <div class="project-footer">
+                            <span class="tool">JMeter</span><span class="tool">Grafana</span>
                         </div>
                     </div>
                 </div>
@@ -82,10 +99,43 @@
         </div>
     </section>
 
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-label">What People Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Almoatasim's attention to detail is unmatched. He found critical bugs we never even considered."</p>
+                    <span>— Ahmed, Project Manager</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"A true QA expert. His automation skills saved us countless hours and improved release quality."</p>
+                    <span>— Sara, Lead Developer</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Reliable, proactive, and always delivers. Almoatasim is an asset to any team."</p>
+                    <span>— Omar, Product Owner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="final-cta">
+        <div class="cta-box">
+            <h2>Ready to make your software <span>bulletproof?</span></h2>
+            <p>I'm currently available for freelance projects and full-time roles. Let's discuss your quality needs.</p>
+            <a href="mailto:your-email@gmail.com" class="primary-btn">Start a Conversation</a>
+        </div>
+    </section>
+
     <footer>
-        <p>© 2026 Almoatasim Hasanain. Built with precision.</p>
+        <p>© 2026 Almoatasim Hasanain. Quality is not an act, it is a habit.</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
