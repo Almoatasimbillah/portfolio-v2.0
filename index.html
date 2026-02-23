@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eng. Almoatasim | QA Engineer</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2300f2ff%22>A</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 fill=%22%2300f2ff%22>A</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -19,17 +19,18 @@
 
     <nav>
         <div class="logo">ENG. ALMOATASIM<span>.</span></div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#work">Projects</a>
-            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#work">Projects</a>
+                <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            </div>
             <a href="#contact-direct" class="hire-btn">Hire Me</a>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="hero-inner">
+        <div class="container hero-inner">
             <div class="hero-text">
                 <p class="welcome-text" id="typewriter"></p>
                 <h1 class="main-title">I find what <span class="gradient-text">OTHERS MISS</span></h1>
@@ -60,29 +61,31 @@
             <div class="about-grid">
                 <div class="about-content">
                     <p>أنا <strong>المعتصم حسنين</strong>، مهندس حاسبات متخصص في جودة البرمجيات. خريج <strong>بكالوريوس الهندسة الكهربائية - قسم الحاسبات</strong> ومقيد بـ <strong>نقابة المهندسين المصرية</strong>.</p>
-                    <p>كـ Junior QA Engineer، بستخدم عقليتي الهندسية في تحليل المشاكل قبل حدوثها، مش بس مجرد إيجاد الأخطاء. هدفي هو تحويل الأكواد المعقدة لمنتجات سلسة وموثوقة.</p>
+                    <p>كـ Junior QA Engineer، بستخدم عقليتي الهندسية في تحليل المشاكل قبل حدوثها. هدفي هو تحويل الأكواد المعقدة لمنتجات سلسة وموثوقة.</p>
                 </div>
                 <div class="education-card">
                     <i class="fas fa-graduation-cap"></i>
                     <h3>Education</h3>
                     <p>B.Sc. in Computer Engineering</p>
-                    <p>Egyptian Syndicate of Engineers Member</p>
+                    <p>Member of Egypt Engineers Syndicate</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="skills" class="skills-section">
-        <h2 class="section-label">Technical Arsenal</h2>
-        <div class="skills-grid">
-            <div class="skill-tag"><i class="fab fa-python"></i> Selenium</div>
-            <div class="skill-tag"><i class="fas fa-rocket"></i> Postman</div>
-            <div class="skill-tag"><i class="fab fa-jira"></i> Jira</div>
-            <div class="skill-tag"><i class="fas fa-vial"></i> PyTest</div>
-            <div class="skill-tag"><i class="fas fa-database"></i> SQL</div>
-            <div class="skill-tag"><i class="fab fa-jenkins"></i> Jenkins</div>
-            <div class="skill-tag"><i class="fab fa-apple"></i> Appium</div>
-            <div class="skill-tag"><i class="fab fa-git-alt"></i> Git</div>
+        <div class="container">
+            <h2 class="section-label">Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-tag"><i class="fas fa-vial"></i> Selenium</div>
+                <div class="skill-tag"><i class="fas fa-paper-plane"></i> Postman</div>
+                <div class="skill-tag"><i class="fab fa-jira"></i> Jira</div>
+                <div class="skill-tag"><i class="fas fa-code"></i> PyTest</div>
+                <div class="skill-tag"><i class="fas fa-database"></i> SQL</div>
+                <div class="skill-tag"><i class="fab fa-jenkins"></i> Jenkins</div>
+                <div class="skill-tag"><i class="fab fa-android"></i> Appium</div>
+                <div class="skill-tag"><i class="fab fa-git-alt"></i> Git</div>
+            </div>
         </div>
     </section>
 
@@ -90,48 +93,49 @@
         <div class="container">
             <h2 class="section-label">Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card" data-tilt><span class="project-tag">E-Commerce</span><h3>QA Life Cycle</h3><p>Full manual & auto testing for a global store.</p><div class="project-footer"><span class="tool">Selenium</span></div></div>
-                <div class="project-card" data-tilt><span class="project-tag">API</span><h3>Security Suite</h3><p>Validation for 50+ financial endpoints.</p><div class="project-footer"><span class="tool">Postman</span></div></div>
-                <div class="project-card" data-tilt><span class="project-tag">Performance</span><h3>Load Test</h3><p>Stress testing for 10k+ concurrent users.</p><div class="project-footer"><span class="tool">JMeter</span></div></div>
-                <div class="project-card" data-tilt><span class="project-tag">Mobile</span><h3>App Testing</h3><p>Android/iOS UX & Functionality check.</p><div class="project-footer"><span class="tool">Appium</span></div></div>
-                <div class="project-card" data-tilt><span class="project-tag">Web</span><h3>Visual Reg</h3><p>Pixel-perfect UI validation.</p><div class="project-footer"><span class="tool">Applitools</span></div></div>
-                <div class="project-card" data-tilt><span class="project-tag">Backend</span><h3>Database Check</h3><p>Ensuring data integrity with complex SQL.</p><div class="project-footer"><span class="tool">SQL</span></div></div>
+                <div class="project-card" data-tilt><h3>Full QA Life Cycle</h3><p>End-to-end testing for a global e-commerce shop.</p><span>Selenium / Jira</span></div>
+                <div class="project-card" data-tilt><h3>API Security</h3><p>Stress testing & security validation for fintech.</p><span>Postman / Newman</span></div>
+                <div class="project-card" data-tilt><h3>Performance</h3><p>Load analysis for 10k+ concurrent users.</p><span>JMeter</span></div>
+                <div class="project-card" data-tilt><h3>App Automation</h3><p>Testing Android/iOS UX & Functionality.</p><span>Appium</span></div>
+                <div class="project-card" data-tilt><h3>Visual Testing</h3><p>Pixel-perfect UI validation.</p><span>Applitools</span></div>
+                <div class="project-card" data-tilt><h3>Database Test</h3><p>Ensuring data integrity with SQL.</p><span>SQL Server</span></div>
             </div>
         </div>
     </section>
 
     <section id="testimonials" class="testimonials-section">
-        <h2 class="section-label">What People Say</h2>
-        <div class="bubbles-container">
-            <div class="bubble bubble-1"><p>"مهندس شاطر جداً وعنده دقة ملاحظة خرافية."</p><span>— أحمد، مدير مشاريع</span></div>
-            <div class="bubble bubble-2"><p>"Found bugs that our senior team missed!"</p><span>— Sara, Lead Dev</span></div>
-            <div class="bubble bubble-3"><p>"شغل احترافي والتزام بالمواعيد، أنصح بالتعامل معه."</p><span>— محمود، عميل</span></div>
-            <div class="bubble bubble-4"><p>"The best Engineering-driven QA approach."</p><span>— Alex, CTO</span></div>
-            <div class="bubble bubble-5"><p>"ساعدنا جداً في تحسين جودة الأبلكيشن قبل الإطلاق."</p><span>— هدى، مؤسس شركة</span></div>
-            <div class="bubble bubble-1"><p>"Best one had handled my new app."</p><span>—Ibrahem , Fullstack Dev</span></div>
-            <div class="bubble bubble-1"><p>"أحد أفضل المختبرين في التفاهم والإسلوب."</p><span>— بدر، ceo </span></div>
+        <div class="container">
+            <h2 class="section-label">Client Feedback</h2>
+            <div class="bubbles-container">
+                <div class="bubble b1"><p>"مهندس شاطر وعنده دقة ملاحظة ممتازة."</p><span>— أحمد، PM</span></div>
+                <div class="bubble b2"><p>"Saved us weeks of work with automation."</p><span>— Sara, Dev</span></div>
+                <div class="bubble b3"><p>"التزام احترافي بالوقت والجودة."</p><span>— محمود، عميل</span></div>
+                <div class="bubble b4"><p>"Highly recommend for complex QA tasks."</p><span>— Alex, CTO</span></div>
+            </div>
         </div>
     </section>
 
-    <section id="contact-direct" class="direct-contact-section">
+    <section id="contact-direct" class="contact-section">
         <div class="container">
             <div class="cta-box">
                 <h2>Ready for <span>Bulletproof</span> Software?</h2>
-                <div class="contact-form-box">
-                    <textarea id="user-msg" placeholder="Write your message here..."></textarea>
-                    <button onclick="sendToWhatsapp()" class="primary-btn-full">Send to WhatsApp <i class="fab fa-whatsapp"></i></button>
+                <div class="form-container">
+                    <textarea id="user-msg" placeholder="Tell me about your project..."></textarea>
+                    <button onclick="sendToWhatsapp()" class="submit-btn">Send to WhatsApp <i class="fab fa-whatsapp"></i></button>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Eng. Almoatasim Hasanain. Quality is an Engineering discipline.</p>
-        <div class="social-links">
+        <div class="container">
+            <p>© 2026 Eng. Almoatasim Hasanain. Quality is an Engineering discipline.</p>
+            <div class="social-links">
             <a href="https://wa.me/201060058378" target="_blank"><i class="fab fa-whatsapp"></i></a>
             <a href="https://t.me/ِAlMo3" target="_blank"><i class="fab fa-telegram"></i></a>
             <a href="https://github.com/almoatasimbillah" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://linkedin.com/in/almoatasimhasanain/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </footer>
 
