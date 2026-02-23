@@ -103,23 +103,3 @@ footer { padding: 50px; text-align: center; border-top: 1px solid #111; }
     .bubbles-container { height: 800px; display: flex; flex-direction: column; gap: 20px; align-items: center; }
     .bubble { position: relative; top: unset !important; left: unset !important; width: 90%; }
 }
-html {
-    scroll-behavior: smooth;
-}
-
-.project-card:hover h3 {
-    color: var(--accent);
-}
-
-.primary-btn-full:hover {
-    background: var(--accent);
-    color: black;
-    transform: translateY(-3px);
-}
-
-#user-msg::placeholder {
-    color: #666;
-}
-html {
-    scroll-behavior: smooth;
-}
