@@ -49,8 +49,13 @@ window.onscroll = () => {
 // WhatsApp Integration
 function sendToWhatsapp() {
     const msg = document.getElementById('user-msg').value;
-    if(!msg.trim()) return alert("Please, write your message first!");
-    window.open(`https://wa.me/201060058378?text=${encodeURIComponent(msg)}`, '_blank');
+    if(!msg.trim()) {
+        alert("Please write your message first! / من فضلك اكتب رسالتك أولاً");
+        return;
+    }
+    // رقمك مضاف مسبقاً في الرابط
+    const whatsappUrl = `https://wa.me/201060058378?text=${encodeURIComponent(msg)}`;
+    window.open(whatsappUrl, '_blank');
 }
 
 // Tilt Initialization
