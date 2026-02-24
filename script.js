@@ -4,42 +4,56 @@ document.addEventListener('mousemove', (e) => {
     document.getElementById('bg-glow').style.setProperty('--y', e.clientY + 'px');
 });
 
-// Typewriter
+// Typewriter Effect
 const text = "Eng. Almoatasim | Quality Engineering Excellence_";
 let i = 0;
 function type() {
     if (i < text.length) {
         document.getElementById("typewriter").innerHTML += text.charAt(i);
         i++;
-        setTimeout(type, 50);
+        setTimeout(type, 70);
     }
 }
 window.onload = type;
 
-// Theme Toggle
+// Theme Toggle with Memory
 const btn = document.getElementById('theme-toggle');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme === 'light') {
+    document.body.classList.add('light-theme');
+    btn.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+}
+
 btn.addEventListener('click', () => {
     document.body.classList.toggle('light-theme');
+    let theme = 'dark';
     const icon = btn.querySelector('i');
-    icon.classList.toggle('fa-moon');
-    icon.classList.toggle('fa-sun');
+    
+    if (document.body.classList.contains('light-theme')) {
+        theme = 'light';
+        icon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+        icon.classList.replace('fa-sun', 'fa-moon');
+    }
+    localStorage.setItem('theme', theme);
 });
 
-// Scroll Progress
+// Scroll Progress Bar
 window.onscroll = () => {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     document.querySelector(".scroll-progress").style.width = (winScroll / height) * 100 + "%";
 };
 
-// WhatsApp
+// WhatsApp Integration
 function sendToWhatsapp() {
     const msg = document.getElementById('user-msg').value;
-    if(!msg.trim()) return alert("Write something first!");
+    if(!msg.trim()) return alert("Please, write your message first!");
     window.open(`https://wa.me/201060058378?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
-// Tilt
+// Tilt Initialization
 VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
-    max: 15, speed: 400, glare: true, "max-glare": 0.1
+    max: 10, speed: 400, glare: true, "max-glare": 0.1, scale: 1.02
 });
